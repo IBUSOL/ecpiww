@@ -586,11 +586,12 @@ int main(int argc, char *argv[]) {
                 if(getLine(KeyInput, _MAX_PATH))
                     ecpiwwMeter[iX].ident=CalcUIntBCD(atoi(KeyInput));
 
-                printf("Enter Meter Type (2 = Electricity ; 3 = Gas ; 7 = Water) : ");
+                printf("Enter Meter Type (2 = Electricity ; 3 = Gas ; 4 = Heat ; 7 = Water) : ");
                 if(getLine(KeyInput, _MAX_PATH)) {
                     switch(atoi(KeyInput)) {
                         case METER_GAS  :        ecpiwwMeter[iX].type = METER_GAS;          break;
                         case METER_WATER:        ecpiwwMeter[iX].type = METER_WATER;        break;
+                        case METER_HEAT:         ecpiwwMeter[iX].type = METER_HEAT;         break;
                         default: printf(" - wrong Type ; default to Electricity");
                         case METER_ELECTRICITY : ecpiwwMeter[iX].type = METER_ELECTRICITY;  break;
                     }

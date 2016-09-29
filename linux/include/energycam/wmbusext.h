@@ -17,6 +17,7 @@
 //METERS
 #define METER_ELECTRICITY          0x02
 #define METER_GAS                  0x03
+#define METER_HEAT                 0x04
 #define METER_WATER                0x07
 
 #define PACKET_WAS_ENCRYPTED       0x01

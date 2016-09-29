@@ -51,7 +51,7 @@
 //App defines
 #define MAXMETER 16 // same value as define MAXSLOT in wmbus.c
 
-#define FASTFORWARD             0x18C4
+#define FASTFORWARD             0x2C2D
 #define AES_KEYLENGHT_IN_BYTES  16
 
 #pragma pack(push,1)
